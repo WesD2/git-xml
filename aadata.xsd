@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://aa.com/opdatasschema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aaopdata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="aadatagroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="aadata">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="aaelement">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="value" type="xs:unsignedByte" />
+                          <xs:element name="date">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="day" type="xs:unsignedByte" />
+                                <xs:element name="month" type="xs:unsignedByte" />
+                                <xs:element name="year" type="xs:unsignedShort" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="unit" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aaopdata xmlns="http://aa.com/opdatasschema"  >
+  <aadatagroup>
+    <aadata name="D0" unit="percent">
+      <aaelement >
+      <value>86</value>
+      <date>
+        <day>18</day>
+        <month>12</month>
+        <year>2014</year>
+      </date>
+      </aaelement>
+      <aaelement >
+        <value>92</value>
+        <date>
+          <day>19</day>
+          <month>12</month>
+          <year>2014</year>
+        </date>
+      </aaelement>
+    </aadata>
+  </aadatagroup>
+</aaopdata>
